@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const connectDB = require('./utils/db');
 const app = express()
-const port = 3000
+const port = 3001
 
 /** Enable cors */
 app.use(cors());
