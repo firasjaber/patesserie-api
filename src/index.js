@@ -1,10 +1,12 @@
 const express = require('express')
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const connectDB = require('./utils/db');
 const app = express()
 const port = 3000
 
-const produits = ['produit1','prodiut2','produit3'];
+/** Enable cors */
+app.use(cors());
 
 /** Parsing the request */
 app.use(bodyParser.urlencoded({ extended: false }));
